@@ -77,6 +77,8 @@ export default class Slider extends React.Component {
 
   slickNext = () => this.innerSlider.slickNext();
 
+  getCurrentBreakPoint = () => this.state.breakpoint;
+
   slickGoTo = (slide, dontAnimate = false) =>
     this.innerSlider.slickGoTo(slide, dontAnimate);
 
